@@ -1,10 +1,16 @@
-# local .terraform dir
-.terraform/*
+# exclude folders beginning with dots
+.terraform
 
 # tf state files
 *.tfstate
 *.tfstate.*
 
-
 # tf variable files
 *.tfvars
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore Mac/OSX system file, with folder metadata
+.DS_Store
